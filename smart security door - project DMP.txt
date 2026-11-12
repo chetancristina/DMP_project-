@@ -1,4 +1,4 @@
-DMA project - SMART SECURITY DOOR
+DMP project - SMART SECURITY DOOR
 	
 	The main idea is to create a small automatic door that can open and close using a sensor and a servo motor. The system will also use a SSD to show the door's status and a buzzer for sound notifications.
 	As an extra feature, I want to add an RFID card reader so that only authorized people can open the door.
