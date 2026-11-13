@@ -1,36 +1,33 @@
 DMP project - SMART SECURITY DOOR
 	
-	The main idea is to create a small automatic door that can open and close using a sensor and a servo motor. The system will also use a SSD to show the door's status and a buzzer for sound notifications.
+	The main idea is to create a small automatic door that can open and close using a sensor and a servo motor. 
+	The system will also use a SSD to show the door's status and a buzzer for sound notifications.
 	As an extra feature, I want to add an RFID card reader so that only authorized people can open the door.
 
 Step 1:
 The ultrasonic sensor measures the distance between the door and an object.
-If someone places their hand less than 15 cm away, the 7-segment display shows "O" (Open).
-Otherwise, it shows "C" (Closed).
+If someone places their hand less than 15 cm away, the SSD shows "O" (Open). Otherwise, it shows "C" (Closed).
 
 Step 2:
-
 When the sensor detects an object nearby:
-The servo motor rotates to open the door.
-The buzzer makes a short confirmation sound.
-The door stays open for a few seconds.
-The servo motor returns to its initial position and closes the door.
-The display shows "C" again.
+	The servo motor rotates to open the door.
+	The buzzer makes a short confirmation sound.
+	The door stays open for a few seconds.
+	The servo motor returns to its initial position and closes the door.
+	The SSD shows "C" again.
 
 Step 3:
 I want to add an RFID reader to make the door more secure.
-
-If an authorized RFID card is detected, the door opens automatically.
-If an unauthorized card is detected, the door stays closed.
-The display shows "E" (Error).
-The buzzer activates an alarm for few seconds.
+	If an authorized RFID card is detected, the door opens automatically.
+	If an unauthorized card is detected, the door stays closed.
+	The SSD shows "E" (Error).
+	The buzzer activates an alarm for few seconds.
 
 
 Step 4:
 I want to add a push button that allows the door to be opened manually from the inside.
-The Arduino detects the button press and opens the door.
-The SSD shows "O" (Open).
-The door stays open for a few seconds.
-The door closes automatically, and the display returns to "C" (Closed).
-
+	The Arduino detects the button press and opens the door.
+	The SSD shows "O".
+	The door stays open for a few seconds.
+	The door closes automatically, and the display returns to "C".
 This feature can be used as an emergency exit or as a manual opening mechanism.
